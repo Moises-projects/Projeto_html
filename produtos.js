@@ -19,13 +19,13 @@ const produtos = imagens.map(img => {
   let categoria = "";
 
   if (img.includes("cadeira")) {
-    categoria = "cadeira"; // categoria correta
+    categoria = "cadeira"; 
     nome = img.replace(".png", "").replace(/_/g, " ");
     preco = 799 + Math.random() * 300;
   } 
   
   else if (img.includes("placa")) {
-    categoria = "placa"; // categoria correta
+    categoria = "placa"; 
     nome = img.replace(".png", "").replace(/_/g, " ");
     preco = 1500 + Math.random() * 3000;
   } 
@@ -34,7 +34,7 @@ const produtos = imagens.map(img => {
     img.includes("i3") || img.includes("i5") || img.includes("i7") || img.includes("i9") ||
     img.includes("ryzen") || img.includes("intel")
   ) {
-    categoria = "processador"; // categoria correta
+    categoria = "processador"; 
     nome = img.replace(".png", "").replace(/_/g, " ");
     preco = 600 + Math.random() * 2000;
   }
@@ -43,14 +43,13 @@ const produtos = imagens.map(img => {
     nome: nome.toUpperCase(),
     categoria,
     preco: preco.toFixed(2),
-    img: "./img/" + img,
+    img: "./" + img, 
     descricao: `Produto da categoria ${categoria}.`
   };
 });
 
 const container = document.getElementById("produtos");
 
-// Função que renderiza os produtos
 function renderProdutos(lista) {
   container.innerHTML = "";
 
@@ -68,28 +67,19 @@ function renderProdutos(lista) {
   });
 }
 
-// Renderiza todos no início
 renderProdutos(produtos);
 
-// FILTRO POR CATEGORIA
 document.getElementById("filtroCategoria").addEventListener("change", function () {
   const categoria = this.value;
 
   if (categoria === "todas") {
     renderProdutos(produtos);
   } else {
-    const filtrados = produtos.filter(p => p.categoria === categoria);
-    renderProdutos(filtrados);
+    renderProdutos(produtos.filter(p => p.categoria === categoria));
   }
 });
 
-// BUSCA POR NOME
 document.getElementById("barraBusca").addEventListener("input", function () {
   const texto = this.value.toLowerCase();
-
-  const filtrados = produtos.filter(p =>
-    p.nome.toLowerCase().includes(texto)
-  );
-
-  renderProdutos(filtrados);
+  renderProdutos(produtos.filter(p => p.nome.toLowerCase().includes(texto)));
 });
