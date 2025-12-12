@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+.top-bar {
+  background: #1f1f1f;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+    width: 200px; 
+    height: auto;    
+    object-fit: contain; 
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 10px 40px;
+    border-radius: 10px;
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    transition: all 0.25s ease;
+}
+
+.btn-voltar {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 6px 12px;
+  background: #333;
+  border-radius: 6px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 70px);
+}
+
+.login-box {
+  background: #1b1b1b;
+  padding: 40px;
+  width: 380px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #000;
+  text-align: center;
+}
+
+.login-box h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.subtitle {
+  margin: 5px 0 25px 0;
+  opacity: 0.7;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  background: #2e2e2e;
+  color: white;
+}
+
+.input-group input:focus {
+  outline: 2px solid red;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  background: red;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 10px;
+  transition: 0.2s;
+}
+
+.btn-login:hover {
+  background: #cc0000;
+}
+
+.extras {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.extras a {
+  color: #1ebd43;
+  text-decoration: none;
+}
+
+.extras a:hover {
+  text-decoration: underline;
+}
+/* Botão que abre o alerta */
+/* Botão que abre o alerta */
+.btn-alerta {
+  padding: 12px 24px;
+  background-color: #ff4757;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Fundo escurecido */
+.alerta-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* ALERTA GRANDE ESTILIZADO */
+.alerta-box-grande {
+  position: relative;
+  background: #fff;
+  width: 650px;
+  padding: 45px;
+  border-radius: 18px;
+  text-align: center;
+  font-size: 20px;
+  animation: fadeInScale 0.35s ease;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Botão X (fechar) */
+.alerta-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+  transition: 0.2s;
+}
+
+.alerta-close:hover {
+  color: #ff4757;
+  transform: scale(1.2);
+}
+
+/* Texto */
+.alerta-box-grande h2 {
+  font-size: 36px;
+  margin-bottom: 18px;
+}
+
+.alerta-box-grande p {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+/* Botão fechar */
+.btn-fechar {
+  padding: 14px 35px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+.btn-fechar:hover {
+  background-color: #187bcd;
+  transform: scale(1.05);
+}
+
+/* Animação */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+body.no-scroll {
+  overflow: hidden; /* impede rolagem */
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta-width name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cadastro.css">
+  <script defer src="cadastro.js"></script>
+  <title>Criar Conta - GamerShop</title>
+  <script>
+  window.onload = function() {
+    document.getElementById("btnContinuar").addEventListener("click", () => {
+      document.getElementById("aviso-overlay").style.display = "none";
+    });
+  };
+</script>
+
+</head>
+<body>
+
+<header class="top-bar">
+ <div class="logo">
+    <a href="index.html">
+        <img src="./img/logovermelha.png" alt="Logo GamerShop">
+    </a>
+</div>
+
+  <a href="login.html" class="btn-voltar">← Voltar</a>
+</header>
+
+<section class="cadastro-container">
+
+  <div class="cadastro-box">
+    <h1>Criar Conta</h1>
+    <p class="subtitle">Preencha os dados abaixo para se cadastrar</p>
+
+    <div class="input-group">
+      <label>Nome completo</label>
+      <input type="text" placeholder="Digite seu nome">
+    </div>
+
+    <div class="input-group">
+      <label>E-mail</label>
+      <input type="email" placeholder="Digite seu e-mail">
+    </div>
+
+    <div class="input-group">
+      <label>Senha</label>
+      <input type="password" placeholder="Crie uma senha">
+    </div>
+
+    <div class="input-group">
+      <label>Confirmar senha</label>
+      <input type="password" placeholder="Repita sua senha">
+    </div>
+
+    <button class="btn-cadastrar">Cadastrar</button>
+
+    <p class="login-link">
+      Já possui conta? <a href="login.html">Entrar</a>
+    </p>
+  </div>
+  <div id="aviso-overlay">
+  <div id="aviso-box">
+    <p>❗ Não compartilhe sua senha com terceiros!</p>
+    <button id="btnContinuar">Entendi</button>
+  </div>
+</div>
+
+
+
+
+</section>
+
+</body>
+</html>

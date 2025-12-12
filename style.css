@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+.top-bar {
+  background: #1f1f1f;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+
+.search-bar {
+  display: flex;
+  width: 40%;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  background: red;
+  border: none;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.header-actions a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.cart {
+  background: #1ebd43;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.menu {
+  background: #c00000;
+  padding: 20px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+}
+
+.banner-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.card-gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 10px 0;
+}
+
+.card-gallery img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.grid-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    width: auto;
+    height: auto; /* escolha a altura desejada */
+    background: #111; /* fundo neutro */
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* NÃO corta a imagem */
+    display: block;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  color: black;
+  background: white;
+  border-radius: 5px;
+}
+

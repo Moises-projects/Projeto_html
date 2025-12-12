@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="produtos.css" />
+    <script defer src="produtos.js"></script>
+    <script></script>
+    <title>Produtos</title>
+  </head>
+
+  <body>
+    <header class="top-bar">
+      <div class="logo">
+    <a href="index.html">
+        <img src="./img/logovermelha.png" alt="Logo GamerShop">
+    </a>
+</div>
+
+      <div class="search-area">
+  <input type="text" id="barraBusca" placeholder="O que você está procurando?">
+
+  <select id="filtroCategoria">
+    <option value="todas">Todas</option>
+    <option value="cadeira">Cadeiras</option>
+    <option value="placa">Placa de Vídeo</option>
+    <option value="processador">Processador</option>
+  </select>
+
+  <button id="btnBuscar" class="btnBuscar">🔍</button>
+</div>
+
+      <div class="header-actions">
+        <a href="http://127.0.0.1:5500/login.html">Conta</a>
+        <a href="#">Favoritos</a>
+        <a href="#" class="cart">Carrinho</a>
+      </div>
+    </header>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="http://127.0.0.1:5500/produtos.html">Produtos</a></li>
+        <li><a href="http://127.0.0.1:5500/produtos.html">MONTE SEU PC</a></li>
+        <li><a href="http://127.0.0.1:5500/produtos.html">PCS GAMERS</a></li>
+        <li><a href="http://127.0.0.1:5500/produtos.html">PROMOÇÕES</a></li>
+      </ul>
+    </nav>
+
+    <section class="banner">
+      <div class="banner-container">
+        <img src="./img/banner.png" class="banner" alt="banner">
+      </div>
+    </section>
+
+    
+    <div id="produtos" class="grid-container"></div>    
+    <div id="produtos" class="grid"></div>
+
+
+  </body>
+</html>
